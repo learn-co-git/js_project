@@ -1,0 +1,98 @@
+  [1m[35m (549.6ms)[0m  [1m[35mCREATE DATABASE "remote_work_development" ENCODING = 'unicode'[0m
+  [1m[35m (208.9ms)[0m  [1m[35mCREATE DATABASE "remote_work_test" ENCODING = 'unicode'[0m
+  [1m[35m (50.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (12.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1308885907657760040)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (4.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-01 05:52:11.189481"], ["updated_at", "2021-02-01 05:52:11.189481"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(1308885907657760040)[0m
+  [1m[35m (14.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1308885907657760040)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210201055533)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (20.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210201055533"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(1308885907657760040)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "nempey2000@yahoo.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Neil"], ["email", "nempey2000@yahoo.com"], ["password_digest", "$2a$12$1JjZFrDeTXGtUpTdSbEdK.9K1flvjteCF/cup9bVZ1mu3zeAKrxo."], ["created_at", "2021-02-01 06:22:49.462624"], ["updated_at", "2021-02-01 06:22:49.462624"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tiffanysimpson@aol.net"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tiffany"], ["email", "tiffanysimpson@aol.net"], ["password_digest", "$2a$12$eTbS9ndrfaCmm9IboC0p2eBQuBd1Y5wPv5pUV0fQQNXrvpx.cWcjy"], ["created_at", "2021-02-01 06:22:49.792372"], ["updated_at", "2021-02-01 06:22:49.792372"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "reebmp@yahoo.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (4.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Chris"], ["email", "reebmp@yahoo.com"], ["password_digest", "$2a$12$TCuTqV2l3akKEKVcbVvz9uCSvbpjH5t0kUA8rAnHoNEwTcdK4eO7e"], ["created_at", "2021-02-01 06:22:50.137889"], ["updated_at", "2021-02-01 06:22:50.137889"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sarahcrouton@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sarah"], ["email", "sarahcrouton@gmail.com"], ["password_digest", "$2a$12$TliL7TY3deD7AaWnPjIKtu2izO5mR1UnXWs4zfkxbzT9VRXlxIBiO"], ["created_at", "2021-02-01 06:22:50.472102"], ["updated_at", "2021-02-01 06:22:50.472102"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/api/v1/users" for 127.0.0.1 at 2021-01-31 23:26:08 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-01-31 23:26:09 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/users" for 127.0.0.1 at 2021-01-31 23:27:05 -0700
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant Api::V1::UsersController
+Did you mean?  Api::V1::UserController):
+  
+Started GET "/api/v1/users" for 127.0.0.1 at 2021-01-31 23:27:55 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+Started GET "/api/v1/user" for 127.0.0.1 at 2021-01-31 23:28:02 -0700
+  
+SyntaxError (/Users/argus/Documents/GitHub/js_project/remote_work/remote_work/app/controllers/api/v1/user_controller.rb:10: syntax error, unexpected tINTEGER, expecting do or '{' or '('
+... render json: @user, status 200
+...                            ^~~
+/Users/argus/Documents/GitHub/js_project/remote_work/remote_work/app/controllers/api/v1/user_controller.rb:16: syntax error, unexpected tINTEGER, expecting do or '{' or '('
+... render json: @user, status 200
+...                            ^~~):
+  
+app/controllers/api/v1/user_controller.rb:10: syntax error, unexpected tINTEGER, expecting do or '{' or '('
+app/controllers/api/v1/user_controller.rb:16: syntax error, unexpected tINTEGER, expecting do or '{' or '('
+app/controllers/api/v1/user_controller.rb:10: syntax error, unexpected tINTEGER, expecting do or '{' or '('
+app/controllers/api/v1/user_controller.rb:16: syntax error, unexpected tINTEGER, expecting do or '{' or '('
+Started GET "/api/v1/users" for 127.0.0.1 at 2021-01-31 23:28:57 -0700
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+Started GET "/api/v1/user" for 127.0.0.1 at 2021-01-31 23:30:00 -0700
+  
+SyntaxError (/Users/argus/Documents/GitHub/js_project/remote_work/remote_work/app/controllers/api/v1/user_controller.rb:10: syntax error, unexpected tINTEGER, expecting do or '{' or '('
+... render json: @user, status 200
+...                            ^~~
+/Users/argus/Documents/GitHub/js_project/remote_work/remote_work/app/controllers/api/v1/user_controller.rb:16: syntax error, unexpected tINTEGER, expecting do or '{' or '('
+... render json: @user, status 200
+...                            ^~~):
+  
+app/controllers/api/v1/user_controller.rb:10: syntax error, unexpected tINTEGER, expecting do or '{' or '('
+app/controllers/api/v1/user_controller.rb:16: syntax error, unexpected tINTEGER, expecting do or '{' or '('
+app/controllers/api/v1/user_controller.rb:10: syntax error, unexpected tINTEGER, expecting do or '{' or '('
+app/controllers/api/v1/user_controller.rb:16: syntax error, unexpected tINTEGER, expecting do or '{' or '('
+Started GET "/api/v1/user" for 127.0.0.1 at 2021-01-31 23:31:03 -0700
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UserController#index as HTML
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/user_controller.rb:5:in `index'
+Completed 200 OK in 156ms (Views: 91.4ms | ActiveRecord: 38.3ms | Allocations: 7784)
+
+
