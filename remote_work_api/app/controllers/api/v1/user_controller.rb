@@ -11,23 +11,28 @@ class Api::V1::UserController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
-    if user.save
+    @user = User.find_by_email(user_params[:email])
+    if @user && @user.authenticate(user_params[:password])
+      session[:user_id] = @user.id
       render json: @user, status: 200
+    else
+    @user = User.new(user_params)
+      if @user.save
+        session[:user_id] = @user.id
+        render json: @user, status: 200
+      end
     end
   end
 
   def destroy
-    @user = User.find(params[:id])
-    if @user.delete
-    render json: {userId: @user.id}
-    end
+    session.clear
+    render json: {userId: @user.id, message: "Logged Out"}
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :password)
+    params.permit(:name, :email, :password)
   end
 
 end

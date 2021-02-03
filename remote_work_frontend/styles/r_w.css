@@ -6,3 +6,17 @@ h2 {
   color: navy;
   margin-left: 20px;
 }
+
+.find-create-container {
+  width: 130px;
+  height: 100px;
+  padding: 5px;
+}
+
+#form1 {
+  background-color:blue;
+  width: 150px;
+  height: 100px;
+  padding: 10px;
+  border: 5px solid black;
+}

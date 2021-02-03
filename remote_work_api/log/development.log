@@ -96,3 +96,361 @@ Processing by Api::V1::UserController#index as HTML
 Completed 200 OK in 156ms (Views: 91.4ms | ActiveRecord: 38.3ms | Allocations: 7784)
 
 
+Started POST "/api/v1/user" for ::1 at 2021-02-02 10:48:37 -0700
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"email"=>{}, "name"=>"", "password"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>{}}}
+[31mUnpermitted parameter: :email[0m
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 79.0ms | Allocations: 7919)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa4c4486d20>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 10:49:41 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"email"=>{}, "name"=>"", "password"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>{}}}
+[31mUnpermitted parameter: :email[0m
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 1612)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa4c47da328>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 10:50:50 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"email"=>{}, "name"=>"", "password"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>{}}}
+[31mUnpermitted parameter: :email[0m
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1611)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa4cb099fa8>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 10:50:50 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"email"=>{}, "name"=>"", "password"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>{}}}
+[31mUnpermitted parameter: :email[0m
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1639)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa4c8178378>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 10:51:58 -0700
+Started POST "/api/v1/user" for ::1 at 2021-02-02 10:51:58 -0700
+Processing by Api::V1::UserController#create as JSON
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"email"=>{}, "name"=>"", "password"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>{}}}
+[31mUnpermitted parameter: :email[0m
+  Parameters: {"email"=>{}, "name"=>"", "password"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>{}}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1700)
+
+
+[31mUnpermitted parameter: :email[0m
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa4c81dbf90>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 3221)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa4cb16f900>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 10:54:02 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"email"=>{}, "name"=>"", "password"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>{}}}
+[31mUnpermitted parameter: :email[0m
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 1611)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa4cb1fce40>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 15:35:06 -0700
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 16ms (ActiveRecord: 3.7ms | Allocations: 3107)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/user_controller.rb:30:in `user_params'
+app/controllers/api/v1/user_controller.rb:14:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 15:35:22 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 117)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/user_controller.rb:30:in `user_params'
+app/controllers/api/v1/user_controller.rb:14:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 15:36:41 -0700
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 19ms (ActiveRecord: 2.5ms | Allocations: 3105)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/user_controller.rb:30:in `user_params'
+app/controllers/api/v1/user_controller.rb:14:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 15:43:31 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 0ms (Allocations: 117)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/api/v1/user_controller.rb:30:in `user_params'
+app/controllers/api/v1/user_controller.rb:14:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 15:44:37 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 43.6ms | Allocations: 4899)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa202dca8d8>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 17:51:24 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 5ms (Allocations: 1575)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa20a093248>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 17:52:01 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 5ms (Allocations: 1575)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa206218ae0>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 17:52:25 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 5ms (Allocations: 1567)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa206282cb0>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 17:52:25 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 8ms (Allocations: 1572)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa20b065dd8>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 17:52:26 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 5ms (Allocations: 1567)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa202d37b00>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 17:52:26 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 7ms (Allocations: 1567)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa20270e918>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 17:52:26 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 6ms (Allocations: 1567)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa20a027278>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 17:52:27 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 6ms (Allocations: 1567)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa206120e08>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 17:52:27 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 5ms (Allocations: 1567)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa20b00cfd0>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 17:52:27 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 4ms (Allocations: 1567)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa206213c98>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 17:53:08 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"user"=>{}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 5ms (Allocations: 1567)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa206271140>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 17:55:17 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"email"=>"@neil.com", "name"=>"neil", "password"=>"[FILTERED]", "user"=>{"name"=>"neil", "email"=>"@neil.com"}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 331ms (Allocations: 1648)
+
+
+  
+NameError (undefined local variable or method `user' for #<Api::V1::UserController:0x007fa2063087c0>
+Did you mean?  @user):
+  
+app/controllers/api/v1/user_controller.rb:15:in `create'
+Started POST "/api/v1/user" for ::1 at 2021-02-02 17:57:42 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"email"=>"@neil.com", "name"=>"neil", "password"=>"[FILTERED]", "user"=>{"name"=>"neil", "email"=>"@neil.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/user_controller.rb:15:in `create'
+  [1m[36mUser Exists? (6.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "@neil.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user_controller.rb:15:in `create'
+  [1m[36mUser Create (10.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "neil"], ["email", "@neil.com"], ["password_digest", "$2a$12$K8fqilhqIGh10U/JKE3.3.yZI/9jjSHP5FhBUhnH9Mcx3TQ2VI.KS"], ["created_at", "2021-02-03 00:57:42.657250"], ["updated_at", "2021-02-03 00:57:42.657250"]]
+  ↳ app/controllers/api/v1/user_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/user_controller.rb:15:in `create'
+Completed 200 OK in 372ms (Views: 0.6ms | ActiveRecord: 50.1ms | Allocations: 6006)
+
+
+Started POST "/api/v1/user" for ::1 at 2021-02-02 18:17:35 -0700
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"email"=>"reebmp@aol.com", "name"=>"Chris", "password"=>"[FILTERED]", "user"=>{"name"=>"Chris", "email"=>"reebmp@aol.com"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "reebmp@aol.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user_controller.rb:14:in `create'
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/user_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "reebmp@aol.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user_controller.rb:20:in `create'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Chris"], ["email", "reebmp@aol.com"], ["password_digest", "$2a$12$dBBatEn/5PmeQeibWCtbDOKvKw6ye2Lb99DNtNtVSJBdQ4T4ovFEK"], ["created_at", "2021-02-03 01:17:35.825705"], ["updated_at", "2021-02-03 01:17:35.825705"]]
+  ↳ app/controllers/api/v1/user_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/user_controller.rb:20:in `create'
+Completed 200 OK in 403ms (Views: 0.8ms | ActiveRecord: 15.5ms | Allocations: 10391)
+
+
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/api/v1/user" for ::1 at 2021-02-02 21:22:20 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"email"=>"daisy@daisy.net", "name"=>"Daisy", "password"=>"[FILTERED]", "user"=>{"name"=>"Daisy", "email"=>"daisy@daisy.net"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "daisy@daisy.net"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user_controller.rb:14:in `create'
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/user_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "daisy@daisy.net"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user_controller.rb:20:in `create'
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Daisy"], ["email", "daisy@daisy.net"], ["password_digest", "$2a$12$bs1Z4MfGBniqWr7XEgA5ReNfHIYE.KyYmcSRb9.u9TSwZTLjSfsOO"], ["created_at", "2021-02-03 04:22:21.414360"], ["updated_at", "2021-02-03 04:22:21.414360"]]
+  ↳ app/controllers/api/v1/user_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/user_controller.rb:20:in `create'
+Completed 200 OK in 502ms (Views: 1.2ms | ActiveRecord: 31.9ms | Allocations: 5210)
+
+
+Started POST "/api/v1/user" for ::1 at 2021-02-02 21:24:53 -0700
+Processing by Api::V1::UserController#create as JSON
+  Parameters: {"email"=>"whereareyou@now", "name"=>"Scooby", "password"=>"[FILTERED]", "user"=>{"name"=>"Scooby", "email"=>"whereareyou@now"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "whereareyou@now"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user_controller.rb:14:in `create'
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/user_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "whereareyou@now"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user_controller.rb:20:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Scooby"], ["email", "whereareyou@now"], ["password_digest", "$2a$12$B4U6FeJ9gy7VrfJNCcABrOigKo3V52xphdPdFAMM.tmNKS0ZxBgq."], ["created_at", "2021-02-03 04:24:53.920269"], ["updated_at", "2021-02-03 04:24:53.920269"]]
+  ↳ app/controllers/api/v1/user_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/user_controller.rb:20:in `create'
+Completed 200 OK in 571ms (Views: 1.2ms | ActiveRecord: 5.9ms | Allocations: 3155)
+
+
