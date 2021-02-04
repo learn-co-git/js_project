@@ -1,5 +1,5 @@
 class App {
   constructor () {
-    this.user = new User()
+    this.office = new Office()
   }
 }
