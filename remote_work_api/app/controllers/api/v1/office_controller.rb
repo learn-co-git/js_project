@@ -2,6 +2,7 @@ class Api::V1::OfficeController < ApplicationController
 
   def index
     @offices = Office.all
+    render json: @offices, status: 200
   end
 
   def show
