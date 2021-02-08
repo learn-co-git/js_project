@@ -78,3 +78,34 @@ font-family: brush script mt
   width: 45%;
   margin: 25px;
 }
+
+.createRemoteOffice {
+  background-color:darkcyan;
+  width:90%;
+  padding:20px;
+  margin:10px 0;
+  box-shadow:0 0 15px 7px rgba(0,0,0,0.06);
+  border-radius:10px;
+}
+
+input[type=text] {
+  color:darkcyan;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  padding:10px;
+  margin:10px 0;
+  border-radius:10px;
+}
+
+input {
+  width:80%;
+}
+
+.textarea {
+  width:80%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border:0;
+  box-shadow:0px 15px 4px rgba(0,0,0,0.06);
+  height:101px;
+}
