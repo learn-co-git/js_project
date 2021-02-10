@@ -1,5 +1,9 @@
 class OfficeAdapter {
-  constructor(){
+  constructor() {
+    this.baseUrl = 'http://localhost:3000/api/v1/office'
+  }
 
+  fetchAndCreate(event) {
+    console.log(event)
   }
 }

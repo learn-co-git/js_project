@@ -13,16 +13,31 @@
       <h2 style="color:tomato;">Out of way places for your next office</h2>
 
   <div class="create-office">
+    <form name="myForm" id="workNew" class="createRemoteOffice" style="display: none;">
+      <label for="location">Location:</label><br>
+      <input type="text" id="location" name="location"><br>
+      <label for="cell">Cell Signal Strength(1poor - 10great):</label><br>
+      <input type="text" id="cell" name="cell">
+      <label for="bathrooms">Bathrooms(1none - 10great):</label><br>
+      <input type="text" id="bathrooms" name="bathrooms"><br>
+      <label for="peace_index">Quality of Working Environment(1poor - 10excellent):</label><br>
+      <input type="text" id="peace_index" name="peace_index"><br>
+      <label for="description">Description:</label><br>
+      <input type="text" id="description" class="textarea" name="description"><br>
+      <input type="submit" value="Submit">
+    </form>
     <h3 id="h3-share">Share an Office</h3>
     <button id="share" class="button button1">Share</button>
     </div>
   </div>
   <div id="offices">
   </div>
+
   <script src="src/adapters/OfficeAdapter.js"></script>
   <script src="src/components/Office.js"></script>
   <script src="src/adapters/OfficesAdapter.js"></script>
   <script src="src/components/Offices.js"></script>
+  <script src="src/components/Validate.js"></script>
   <script src="src/components/app.js"></script>
   <script src="src/index.js"></script>
 </body>
