@@ -3618,3 +3618,119 @@ Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 3.3ms | Allocations: 1895
 
 
   [1m[36mOffice Load (1.0ms)[0m  [1m[34mSELECT "offices".* FROM "offices" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 12:56:15 -0700
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.0) lib/puma/configuration.rb:247:in `call'
+puma (5.2.0) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.0) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.0) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.0) lib/puma/server.rb:432:in `process_client'
+puma (5.2.0) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 12:57:17 -0700
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (4.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 50ms (Views: 11.7ms | ActiveRecord: 22.8ms | Allocations: 8764)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 13:18:52 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (1.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 32ms (Views: 32.0ms | ActiveRecord: 14.9ms | Allocations: 3332)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 13:19:28 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.9ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.9ms | Allocations: 1304)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 13:20:56 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.7ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.7ms | Allocations: 1304)
+
+
+Started POST "/api/v1/office" for 127.0.0.1 at 2021-02-10 13:21:12 -0700
+Processing by Api::V1::OfficeController#create as JSON
+  Parameters: {"location"=>"Fremont", "cell"=>"12", "bathrooms"=>"12", "peace_index"=>"13", "description"=>"were", "office"=>{"location"=>"Fremont", "cell"=>"12", "bathrooms"=>"12", "peace_index"=>"13", "description"=>"were"}}
+[31mUnpermitted parameter: :office[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/office_controller.rb:14:in `create'
+  [1m[36mOffice Create (9.4ms)[0m  [1m[32mINSERT INTO "offices" ("location", "cell", "bathrooms", "peace_index", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["location", "Fremont"], ["cell", "12"], ["bathrooms", "12"], ["peace_index", "13"], ["description", "were"], ["created_at", "2021-02-10 20:21:12.807828"], ["updated_at", "2021-02-10 20:21:12.807828"]]
+  ↳ app/controllers/api/v1/office_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/office_controller.rb:14:in `create'
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 11.3ms | Allocations: 2074)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 13:21:46 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (3.5ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 3.5ms | Allocations: 1423)
+
+
+Started POST "/api/v1/office" for 127.0.0.1 at 2021-02-10 13:22:07 -0700
+Processing by Api::V1::OfficeController#create as JSON
+  Parameters: {"location"=>"West Hamm", "cell"=>"13", "bathrooms"=>"11", "peace_index"=>"11", "description"=>"England", "office"=>{"location"=>"West Hamm", "cell"=>"13", "bathrooms"=>"11", "peace_index"=>"11", "description"=>"England"}}
+[31mUnpermitted parameter: :office[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/office_controller.rb:14:in `create'
+  [1m[36mOffice Create (2.3ms)[0m  [1m[32mINSERT INTO "offices" ("location", "cell", "bathrooms", "peace_index", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["location", "West Hamm"], ["cell", "13"], ["bathrooms", "11"], ["peace_index", "11"], ["description", "England"], ["created_at", "2021-02-10 20:22:07.087027"], ["updated_at", "2021-02-10 20:22:07.087027"]]
+  ↳ app/controllers/api/v1/office_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/office_controller.rb:14:in `create'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 4.0ms | Allocations: 1878)
+
+
