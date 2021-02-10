@@ -1,9 +1,28 @@
 class OfficeAdapter {
   constructor() {
-    this.baseUrl = 'http://localhost:3000/api/v1/office'
+    this.base = "http://127.0.0.1:3000/api/v1/office"
   }
 
   fetchAndCreate(event) {
-    console.log(event)
-  }
+    console.log("hello")
+    let configurationObject = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify({location: event[0], cell: event[1], bathrooms: event[2], peace_index: event[3], description: event[4]})
+    };
+    fetch(this.base, configurationObject)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(object) {
+        console.log(object);
+      })
+      .catch(function(error) {
+        alert("Bad things! Ragnarők!");
+        console.log(error.message);
+      });
+    }
 }

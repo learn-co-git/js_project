@@ -15,6 +15,7 @@ class Office {
       form.addEventListener('submit', (event) => {
 
          new Validate(event)
+         event.preventDefault()
 
       })
     })
