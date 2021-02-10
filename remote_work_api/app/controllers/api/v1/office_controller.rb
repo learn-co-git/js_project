@@ -28,6 +28,6 @@ class Api::V1::OfficeController < ApplicationController
   private
 
   def office_params
-    params.permit(:location, :cell, :bathrooms, :peace_index, :description)
+    params.require(:office).permit(:location, :cell, :bathrooms, :peace_index, :description)
   end
 end

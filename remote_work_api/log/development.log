@@ -3734,3 +3734,152 @@ Processing by Api::V1::OfficeController#create as JSON
 Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 4.0ms | Allocations: 1878)
 
 
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 13:42:07 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (1.2ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 13.3ms | Allocations: 3547)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 13:42:23 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (1.9ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 1.9ms | Allocations: 1575)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 13:43:41 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (1.0ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 1.0ms | Allocations: 1561)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 13:49:02 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.5ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 1561)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 13:50:06 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.6ms | Allocations: 1561)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 13:50:59 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.7ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.7ms | Allocations: 1561)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 13:51:25 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (3.1ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 3.1ms | Allocations: 1561)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 13:58:34 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (2.9ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 29.1ms | Allocations: 3547)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 13:58:39 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.7ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.7ms | Allocations: 1561)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 14:00:48 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (1.0ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 1.0ms | Allocations: 1561)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 14:01:04 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.6ms | Allocations: 1561)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 14:02:15 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.6ms | Allocations: 1561)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 14:02:20 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.4ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.4ms | Allocations: 1561)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 14:03:24 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.5ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.5ms | Allocations: 1561)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 14:04:51 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.6ms | Allocations: 1561)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 14:09:40 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.9ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 46ms (Views: 29.6ms | ActiveRecord: 7.6ms | Allocations: 9041)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 14:10:21 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (5.8ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 5.2ms | ActiveRecord: 5.8ms | Allocations: 1580)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 14:12:15 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.5ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 1580)
+
+
+Started POST "/api/v1/office" for 127.0.0.1 at 2021-02-10 14:13:04 -0700
+Processing by Api::V1::OfficeController#create as JSON
+  Parameters: {"location"=>"Mexico", "cell"=>"8", "bathrooms"=>"6", "peace_index"=>"5", "description"=>"If you love the sun, you'll love Mexico.", "office"=>{"location"=>"Mexico", "cell"=>"8", "bathrooms"=>"6", "peace_index"=>"5", "description"=>"If you love the sun, you'll love Mexico."}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/office_controller.rb:14:in `create'
+  [1m[36mOffice Create (1.5ms)[0m  [1m[32mINSERT INTO "offices" ("location", "cell", "bathrooms", "peace_index", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["location", "Mexico"], ["cell", "8"], ["bathrooms", "6"], ["peace_index", "5"], ["description", "If you love the sun, you'll love Mexico."], ["created_at", "2021-02-10 21:13:04.754040"], ["updated_at", "2021-02-10 21:13:04.754040"]]
+  ↳ app/controllers/api/v1/office_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/office_controller.rb:14:in `create'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 3.4ms | Allocations: 2071)
+
+
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1308885907657760040)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateComments (20210210215748)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (69.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "statement" text, "user_name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210210215748"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(1308885907657760040)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
