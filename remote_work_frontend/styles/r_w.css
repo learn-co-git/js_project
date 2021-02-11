@@ -109,3 +109,33 @@ input {
   box-shadow:0px 15px 4px rgba(0,0,0,0.06);
   height:101px;
 }
+
+#message-Error1 {
+  color:red;
+  background-color: white;
+  font-family: brush script mt
+}
+
+#message-Error2 {
+  color:blue;
+  background-color: white;
+  font-family: brush script mt
+}
+
+#message-Error3 {
+  color:yellow;
+  background-color: white;
+  font-family: brush script mt
+}
+
+#message-Error4 {
+  color:purple;
+  background-color: white;
+  font-family: brush script mt
+}
+
+#message-Error5 {
+  color:green;
+  background-color: white;
+  font-family: brush script mt
+}

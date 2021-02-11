@@ -1,4 +1,4 @@
-class CommentController < ApplicationController
+class Api::V1::CommentController < ApplicationController
 
   def index
     @comments = Comment.all
@@ -21,6 +21,6 @@ class CommentController < ApplicationController
   private
 
   def comment_params
-    params.require(:comment).permit(:office_id, :statement, :user_name)
+    params.require(:comment).permit(:statement, :user_name)
   end
 end
