@@ -6,7 +6,8 @@ class Api::V1::CommentController < ApplicationController
   end
 
   def show
-    @comment = Comment.find_by_id(params[:id])
+    @comments = Comment.all.map {|ele| ele if ele.office_id == params["office_id"]}
+    render json: @comments, status: 200
   end
 
   def create
@@ -21,6 +22,6 @@ class Api::V1::CommentController < ApplicationController
   private
 
   def comment_params
-    params.require(:comment).permit(:statement, :user_name)
+    params.require(:comment).permit(:statement, :user_name, :office_id)
   end
 end

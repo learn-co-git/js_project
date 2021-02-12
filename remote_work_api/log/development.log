@@ -4032,3 +4032,690 @@ FOREIGN KEY ("office_id")
   [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("statement", "user_name", "created_at", "updated_at", "office_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["statement", "Perfect, absolutely perfect place to work for the day"], ["user_name", "Tom Robbins"], ["created_at", "2021-02-11 05:34:40.977066"], ["updated_at", "2021-02-11 05:34:40.977066"], ["office_id", 3]]
   [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 23:09:45 -0700
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (1.0ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 47ms (Views: 13.1ms | ActiveRecord: 8.1ms | Allocations: 9369)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 23:11:19 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.8ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.8ms | Allocations: 1060)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 23:19:41 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (2.5ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 43ms (Views: 42.9ms | ActiveRecord: 23.0ms | Allocations: 3046)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 23:24:55 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (8.1ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 53ms (Views: 52.7ms | ActiveRecord: 34.5ms | Allocations: 3047)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 23:45:46 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (1.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 18.3ms | Allocations: 3027)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 23:46:48 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.5ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.5ms | Allocations: 1060)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-10 23:47:30 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.8ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.8ms | Allocations: 1041)
+
+
+Started GET "/api/v1/office" for ::1 at 2021-02-11 19:23:15 -0700
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (2.4ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 72ms (Views: 14.6ms | ActiveRecord: 9.1ms | Allocations: 9368)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 19:24:26 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.6ms | Allocations: 1060)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 19:28:41 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.5ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.5ms | Allocations: 1060)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 19:29:43 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.4ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 1041)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 19:30:27 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.8ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.8ms | Allocations: 1041)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 19:34:05 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (5.2ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 6.0ms | ActiveRecord: 5.2ms | Allocations: 1041)
+
+
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 21:31:11 -0700
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.9ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 72ms (Views: 9.4ms | ActiveRecord: 9.0ms | Allocations: 9370)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 21:32:25 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.7ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.7ms | Allocations: 1060)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 21:37:13 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.6ms | Allocations: 1060)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 21:38:43 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.6ms | Allocations: 1041)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 21:39:20 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (1.5ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 1.5ms | Allocations: 1041)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 21:40:44 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (1.1ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 1.1ms | Allocations: 1060)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 21:42:07 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.7ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.7ms | Allocations: 1041)
+
+
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 21:42:07 -0700
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 21:42:07 -0700
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 21:42:07 -0700
+Processing by Api::V1::CommentController#create as JSON
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"office_id"=>2, "comment"=>{"office_id"=>2}}
+  Parameters: {"office_id"=>3, "comment"=>{"office_id"=>3}}
+[31mUnpermitted parameter: :office_id[0m
+[31mUnpermitted parameter: :office_id[0m
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"office_id"=>1, "comment"=>{"office_id"=>1}}
+[31mUnpermitted parameter: :office_id[0m
+Completed 200 OK in 34ms (Views: 0.2ms | ActiveRecord: 10.0ms | Allocations: 3878)
+
+
+Completed 200 OK in 123ms (Views: 0.2ms | ActiveRecord: 46.7ms | Allocations: 8960)
+
+
+Completed 200 OK in 126ms (Views: 0.3ms | ActiveRecord: 52.6ms | Allocations: 9506)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 21:43:46 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (1.0ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 33ms (Views: 11.7ms | ActiveRecord: 14.9ms | Allocations: 6157)
+
+
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 21:43:46 -0700
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 21:43:46 -0700
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 21:43:46 -0700
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"office_id"=>2, "comment"=>{"office_id"=>2}}
+Processing by Api::V1::CommentController#create as JSON
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"office_id"=>3, "comment"=>{"office_id"=>3}}
+  Parameters: {"office_id"=>1, "comment"=>{"office_id"=>1}}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mOffice Load (5.5ms)[0m  [1m[34mSELECT "offices".* FROM "offices" WHERE "offices"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mComment Create (13.2ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "office_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-02-12 04:43:46.607459"], ["updated_at", "2021-02-12 04:43:46.607459"], ["office_id", 2]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mOffice Load (22.7ms)[0m  [1m[34mSELECT "offices".* FROM "offices" WHERE "offices"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (14.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mComment Create (2.6ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "office_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-02-12 04:43:46.635764"], ["updated_at", "2021-02-12 04:43:46.635764"], ["office_id", 3]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (46.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 83ms (Views: 0.7ms | ActiveRecord: 65.5ms | Allocations: 9064)
+
+
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+Completed 200 OK in 95ms (Views: 0.4ms | ActiveRecord: 38.5ms | Allocations: 10198)
+
+
+  [1m[36mOffice Load (1.8ms)[0m  [1m[34mSELECT "offices".* FROM "offices" WHERE "offices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mComment Create (2.2ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "office_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-02-12 04:43:46.672433"], ["updated_at", "2021-02-12 04:43:46.672433"], ["office_id", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+Completed 200 OK in 123ms (Views: 0.8ms | ActiveRecord: 109.9ms | Allocations: 12046)
+
+
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mOffice Load (0.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 21:54:28 -0700
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.9ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 42ms (Views: 12.3ms | ActiveRecord: 11.2ms | Allocations: 9369)
+
+
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 21:54:29 -0700
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 21:54:29 -0700
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 21:54:29 -0700
+Processing by Api::V1::CommentController#create as JSON
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"office_id"=>1, "comment"=>{"office_id"=>1}}
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"office_id"=>2, "comment"=>{"office_id"=>2}}
+  Parameters: {"office_id"=>3, "comment"=>{"office_id"=>3}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mOffice Load (1.5ms)[0m  [1m[34mSELECT "offices".* FROM "offices" WHERE "offices"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mComment Create (1.6ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "office_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-02-12 04:54:29.138927"], ["updated_at", "2021-02-12 04:54:29.138927"], ["office_id", 2]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+Completed 200 OK in 48ms (Views: 0.6ms | ActiveRecord: 22.5ms | Allocations: 8652)
+
+
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mOffice Load (0.9ms)[0m  [1m[34mSELECT "offices".* FROM "offices" WHERE "offices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOffice Load (1.1ms)[0m  [1m[34mSELECT "offices".* FROM "offices" WHERE "offices"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mComment Create (2.3ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "office_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-02-12 04:54:29.167837"], ["updated_at", "2021-02-12 04:54:29.167837"], ["office_id", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mComment Create (3.6ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "office_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-02-12 04:54:29.169016"], ["updated_at", "2021-02-12 04:54:29.169016"], ["office_id", 3]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+Completed 200 OK in 78ms (Views: 0.6ms | ActiveRecord: 28.1ms | Allocations: 16401)
+
+
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+Completed 200 OK in 78ms (Views: 0.4ms | ActiveRecord: 31.4ms | Allocations: 16675)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 21:58:25 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.9ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.9ms | Allocations: 1060)
+
+
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 21:58:25 -0700
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 21:58:25 -0700
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 21:58:25 -0700
+Processing by Api::V1::CommentController#create as JSON
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"office_id"=>1, "comment"=>{"office_id"=>1}}
+  Parameters: {"office_id"=>2, "comment"=>{"office_id"=>2}}
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"office_id"=>3, "comment"=>{"office_id"=>3}}
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOffice Load (3.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices" WHERE "offices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mComment Create (3.1ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "office_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-02-12 04:58:25.399571"], ["updated_at", "2021-02-12 04:58:25.399571"], ["office_id", 1]]
+  [1m[36mOffice Load (1.2ms)[0m  [1m[34mSELECT "offices".* FROM "offices" WHERE "offices"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mOffice Load (1.7ms)[0m  [1m[34mSELECT "offices".* FROM "offices" WHERE "offices"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mComment Create (1.6ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "office_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-02-12 04:58:25.409037"], ["updated_at", "2021-02-12 04:58:25.409037"], ["office_id", 2]]
+Completed 200 OK in 36ms (Views: 0.7ms | ActiveRecord: 10.7ms | Allocations: 6304)
+
+
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mComment Create (2.8ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "office_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-02-12 04:58:25.406527"], ["updated_at", "2021-02-12 04:58:25.406527"], ["office_id", 3]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+Completed 200 OK in 41ms (Views: 0.5ms | ActiveRecord: 7.7ms | Allocations: 7377)
+
+
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+Completed 200 OK in 43ms (Views: 0.7ms | ActiveRecord: 6.3ms | Allocations: 7930)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 21:59:37 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.6ms | Allocations: 1041)
+
+
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 21:59:37 -0700
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"office_id"=>1, "comment"=>{"office_id"=>1}}
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mOffice Load (0.7ms)[0m  [1m[34mSELECT "offices".* FROM "offices" WHERE "offices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 21:59:37 -0700
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 21:59:37 -0700
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"office_id"=>3, "comment"=>{"office_id"=>3}}
+  [1m[36mComment Create (18.7ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "office_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-02-12 04:59:37.113219"], ["updated_at", "2021-02-12 04:59:37.113219"], ["office_id", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"office_id"=>2, "comment"=>{"office_id"=>2}}
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+Completed 200 OK in 43ms (Views: 1.0ms | ActiveRecord: 26.6ms | Allocations: 4261)
+
+
+  [1m[36mTRANSACTION (13.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (10.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mOffice Load (11.7ms)[0m  [1m[34mSELECT "offices".* FROM "offices" WHERE "offices"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mOffice Load (7.9ms)[0m  [1m[34mSELECT "offices".* FROM "offices" WHERE "offices"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mComment Create (6.2ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "office_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-02-12 04:59:37.170724"], ["updated_at", "2021-02-12 04:59:37.170724"], ["office_id", 3]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mComment Create (6.6ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "office_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-02-12 04:59:37.173830"], ["updated_at", "2021-02-12 04:59:37.173830"], ["office_id", 2]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (43.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+Completed 200 OK in 97ms (Views: 0.3ms | ActiveRecord: 74.4ms | Allocations: 6332)
+
+
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+Completed 200 OK in 90ms (Views: 1.1ms | ActiveRecord: 26.9ms | Allocations: 6093)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 22:06:01 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.9ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 45ms (Views: 41.7ms | ActiveRecord: 15.9ms | Allocations: 7668)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 22:07:30 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.4ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 26ms (Views: 9.6ms | ActiveRecord: 14.2ms | Allocations: 6027)
+
+
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 22:07:30 -0700
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 22:07:30 -0700
+Started POST "/api/v1/comment" for 127.0.0.1 at 2021-02-11 22:07:30 -0700
+Processing by Api::V1::CommentController#create as JSON
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"office_id"=>1, "comment"=>{"office_id"=>1}}
+  Parameters: {"office_id"=>3, "comment"=>{"office_id"=>3}}
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"office_id"=>2, "comment"=>{"office_id"=>2}}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mOffice Load (0.9ms)[0m  [1m[34mSELECT "offices".* FROM "offices" WHERE "offices"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mComment Create (54.2ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "office_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-02-12 05:07:30.629400"], ["updated_at", "2021-02-12 05:07:30.629400"], ["office_id", 2]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mOffice Load (1.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices" WHERE "offices"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mOffice Load (60.4ms)[0m  [1m[34mSELECT "offices".* FROM "offices" WHERE "offices"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (67.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+Completed 200 OK in 159ms (Views: 0.5ms | ActiveRecord: 133.4ms | Allocations: 12073)
+
+
+  [1m[36mComment Create (7.7ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "office_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-02-12 05:07:30.760421"], ["updated_at", "2021-02-12 05:07:30.760421"], ["office_id", 3]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mComment Create (5.2ms)[0m  [1m[32mINSERT INTO "comments" ("created_at", "updated_at", "office_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2021-02-12 05:07:30.767650"], ["updated_at", "2021-02-12 05:07:30.767650"], ["office_id", 1]]
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+Completed 200 OK in 178ms (Views: 0.6ms | ActiveRecord: 128.3ms | Allocations: 15051)
+
+
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:15:in `create'
+Completed 200 OK in 185ms (Views: 0.7ms | ActiveRecord: 68.1ms | Allocations: 15850)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 22:31:24 -0700
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (2.7ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 80ms (Views: 17.1ms | ActiveRecord: 10.2ms | Allocations: 9369)
+
+
+Started POST "/api/v1/comment/" for 127.0.0.1 at 2021-02-11 22:31:24 -0700
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"comment"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 3.5ms | Allocations: 137)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/api/v1/comment_controller.rb:25:in `comment_params'
+app/controllers/api/v1/comment_controller.rb:14:in `create'
+Started POST "/api/v1/comment/" for 127.0.0.1 at 2021-02-11 22:31:24 -0700
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"comment"=>{}}
+Started POST "/api/v1/comment/" for 127.0.0.1 at 2021-02-11 22:31:24 -0700
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 125)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/api/v1/comment_controller.rb:25:in `comment_params'
+app/controllers/api/v1/comment_controller.rb:14:in `create'
+Processing by Api::V1::CommentController#create as JSON
+  Parameters: {"comment"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 116)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: comment):
+  
+app/controllers/api/v1/comment_controller.rb:25:in `comment_params'
+app/controllers/api/v1/comment_controller.rb:14:in `create'
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 22:34:22 -0700
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (1.0ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 72ms (Views: 17.4ms | ActiveRecord: 11.0ms | Allocations: 9370)
+
+
+Started POST "/api/v1/comment/office" for 127.0.0.1 at 2021-02-11 22:34:22 -0700
+Started POST "/api/v1/comment/office" for 127.0.0.1 at 2021-02-11 22:34:22 -0700
+Started POST "/api/v1/comment/office" for 127.0.0.1 at 2021-02-11 22:34:22 -0700
+Processing by Api::V1::CommentController#show as JSON
+  Parameters: {"office_id"=>3, "comment"=>{"office_id"=>3}}
+Processing by Api::V1::CommentController#show as JSON
+  Parameters: {"office_id"=>2, "comment"=>{"office_id"=>2}}
+Processing by Api::V1::CommentController#show as JSON
+  Parameters: {"office_id"=>1, "comment"=>{"office_id"=>1}}
+  [1m[36mComment Load (6.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:9:in `map'
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 35.0ms | Allocations: 5221)
+
+
+  
+NameError (undefined local variable or method `office_id' for #<Api::V1::CommentController:0x007f9f79c9bcb8>):
+  
+app/controllers/api/v1/comment_controller.rb:9:in `block in show'
+app/controllers/api/v1/comment_controller.rb:9:in `map'
+app/controllers/api/v1/comment_controller.rb:9:in `show'
+  [1m[36mComment Load (2.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:9:in `map'
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 49.3ms | Allocations: 22811)
+
+
+  
+NameError (undefined local variable or method `office_id' for #<Api::V1::CommentController:0x007f9f7d92ea90>):
+  
+app/controllers/api/v1/comment_controller.rb:9:in `block in show'
+app/controllers/api/v1/comment_controller.rb:9:in `map'
+app/controllers/api/v1/comment_controller.rb:9:in `show'
+  [1m[36mComment Load (2.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:9:in `map'
+Completed 500 Internal Server Error in 117ms (ActiveRecord: 39.8ms | Allocations: 38078)
+
+
+  
+NameError (undefined local variable or method `office_id' for #<Api::V1::CommentController:0x007f9f7c5011a8>):
+  
+app/controllers/api/v1/comment_controller.rb:9:in `block in show'
+app/controllers/api/v1/comment_controller.rb:9:in `map'
+app/controllers/api/v1/comment_controller.rb:9:in `show'
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 22:38:15 -0700
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (2.4ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 44ms (Views: 16.5ms | ActiveRecord: 10.9ms | Allocations: 9369)
+
+
+Started POST "/api/v1/comment/office" for 127.0.0.1 at 2021-02-11 22:38:15 -0700
+Started POST "/api/v1/comment/office" for 127.0.0.1 at 2021-02-11 22:38:15 -0700
+Started POST "/api/v1/comment/office" for 127.0.0.1 at 2021-02-11 22:38:15 -0700
+Processing by Api::V1::CommentController#show as JSON
+Processing by Api::V1::CommentController#show as JSON
+  Parameters: {"office_id"=>1, "comment"=>{"office_id"=>1}}
+  Parameters: {"office_id"=>2, "comment"=>{"office_id"=>2}}
+Processing by Api::V1::CommentController#show as JSON
+  Parameters: {"office_id"=>3, "comment"=>{"office_id"=>3}}
+  [1m[36mComment Load (3.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:9:in `map'
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 15.6ms | Allocations: 3728)
+
+
+  [1m[36mComment Load (9.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:9:in `map'
+Completed 200 OK in 71ms (Views: 0.2ms | ActiveRecord: 41.2ms | Allocations: 8744)
+
+
+  [1m[36mComment Load (8.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:9:in `map'
+Completed 200 OK in 107ms (Views: 0.3ms | ActiveRecord: 64.3ms | Allocations: 10131)
+
+
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 22:38:56 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.9ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 26ms (Views: 9.3ms | ActiveRecord: 14.5ms | Allocations: 6098)
+
+
+Started POST "/api/v1/comment/office" for 127.0.0.1 at 2021-02-11 22:38:57 -0700
+Started POST "/api/v1/comment/office" for 127.0.0.1 at 2021-02-11 22:38:57 -0700
+  
+SyntaxError (/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected '}', expecting ':'
+...fice_id == params["office_id"]}
+...                              ^
+/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:11: syntax error, unexpected end, expecting '}'
+  end
+  ^~~
+/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected '}', expecting ':'
+app/controllers/api/v1/comment_controller.rb:11: syntax error, unexpected end, expecting '}'
+app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected '}', expecting ':'
+app/controllers/api/v1/comment_controller.rb:11: syntax error, unexpected end, expecting '}'
+app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+Started POST "/api/v1/comment/office" for 127.0.0.1 at 2021-02-11 22:38:57 -0700
+  
+SyntaxError (/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected '}', expecting ':'
+...fice_id == params["office_id"]}
+...                              ^
+/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:11: syntax error, unexpected end, expecting '}'
+  end
+  ^~~
+/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected '}', expecting ':'
+app/controllers/api/v1/comment_controller.rb:11: syntax error, unexpected end, expecting '}'
+app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected '}', expecting ':'
+app/controllers/api/v1/comment_controller.rb:11: syntax error, unexpected end, expecting '}'
+app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+  
+SyntaxError (/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected '}', expecting ':'
+...fice_id == params["office_id"]}
+...                              ^
+/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:11: syntax error, unexpected end, expecting '}'
+  end
+  ^~~
+/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected '}', expecting ':'
+app/controllers/api/v1/comment_controller.rb:11: syntax error, unexpected end, expecting '}'
+app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected '}', expecting ':'
+app/controllers/api/v1/comment_controller.rb:11: syntax error, unexpected end, expecting '}'
+app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 22:42:22 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.9ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 48ms (Views: 10.5ms | ActiveRecord: 8.5ms | Allocations: 9369)
+
+
+Started POST "/api/v1/comment/office" for 127.0.0.1 at 2021-02-11 22:42:23 -0700
+Started POST "/api/v1/comment/office" for 127.0.0.1 at 2021-02-11 22:42:23 -0700
+Started POST "/api/v1/comment/office" for 127.0.0.1 at 2021-02-11 22:42:23 -0700
+  
+SyntaxError (/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected tSTRING_DEND, expecting end
+...fice_id == params["office_id"]}
+...                              ^
+/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:18: syntax error, unexpected tSTRING_DEND, expecting '}'
+...ge: "Failed to create comment"}
+...                              ^
+/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected tSTRING_DEND, expecting end
+app/controllers/api/v1/comment_controller.rb:18: syntax error, unexpected tSTRING_DEND, expecting '}'
+app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected tSTRING_DEND, expecting end
+app/controllers/api/v1/comment_controller.rb:18: syntax error, unexpected tSTRING_DEND, expecting '}'
+app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+  
+SyntaxError (/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected tSTRING_DEND, expecting end
+...fice_id == params["office_id"]}
+...                              ^
+/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:18: syntax error, unexpected tSTRING_DEND, expecting '}'
+...ge: "Failed to create comment"}
+...                              ^
+/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected tSTRING_DEND, expecting end
+app/controllers/api/v1/comment_controller.rb:18: syntax error, unexpected tSTRING_DEND, expecting '}'
+app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected tSTRING_DEND, expecting end
+app/controllers/api/v1/comment_controller.rb:18: syntax error, unexpected tSTRING_DEND, expecting '}'
+app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+  
+SyntaxError (/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected tSTRING_DEND, expecting end
+...fice_id == params["office_id"]}
+...                              ^
+/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:18: syntax error, unexpected tSTRING_DEND, expecting '}'
+...ge: "Failed to create comment"}
+...                              ^
+/Users/argus/Documents/GitHub/js_project/remote_work_api/app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected tSTRING_DEND, expecting end
+app/controllers/api/v1/comment_controller.rb:18: syntax error, unexpected tSTRING_DEND, expecting '}'
+app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+app/controllers/api/v1/comment_controller.rb:9: syntax error, unexpected tSTRING_DEND, expecting end
+app/controllers/api/v1/comment_controller.rb:18: syntax error, unexpected tSTRING_DEND, expecting '}'
+app/controllers/api/v1/comment_controller.rb:27: syntax error, unexpected end-of-input, expecting end
+Started GET "/api/v1/office" for 127.0.0.1 at 2021-02-11 22:43:10 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (2.0ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 48ms (Views: 15.0ms | ActiveRecord: 8.8ms | Allocations: 9369)
+
+
+Started POST "/api/v1/comment/office" for 127.0.0.1 at 2021-02-11 22:43:10 -0700
+Started POST "/api/v1/comment/office" for 127.0.0.1 at 2021-02-11 22:43:10 -0700
+Started POST "/api/v1/comment/office" for 127.0.0.1 at 2021-02-11 22:43:10 -0700
+Processing by Api::V1::CommentController#show as JSON
+  Parameters: {"office_id"=>1, "comment"=>{"office_id"=>1}}
+Processing by Api::V1::CommentController#show as JSON
+  Parameters: {"office_id"=>3, "comment"=>{"office_id"=>3}}
+Processing by Api::V1::CommentController#show as JSON
+  Parameters: {"office_id"=>2, "comment"=>{"office_id"=>2}}
+  [1m[36mComment Load (1.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:9:in `map'
+Completed 200 OK in 17ms (Views: 1.0ms | ActiveRecord: 13.1ms | Allocations: 4307)
+
+
+  [1m[36mComment Load (6.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  [1m[36mComment Load (13.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:9:in `map'
+Completed 200 OK in 76ms (Views: 1.6ms | ActiveRecord: 45.3ms | Allocations: 10267)
+
+
+  ↳ app/controllers/api/v1/comment_controller.rb:9:in `map'
+Completed 200 OK in 106ms (Views: 5.9ms | ActiveRecord: 38.8ms | Allocations: 11977)
+
+

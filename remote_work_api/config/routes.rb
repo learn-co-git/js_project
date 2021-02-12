@@ -4,10 +4,12 @@ Rails.application.routes.draw do
       namespace :api do
         namespace :v1 do
           resources :office
-        end
-      end
+          resources :comment, except: [:show]
 
-      get 'api/v1/office' => 'office#index'
-      post 'api/v1/createoffice' => 'office#create'
+          post "/comment/office" => 'comment#show'
+          end
+        end
+
+
 
 end

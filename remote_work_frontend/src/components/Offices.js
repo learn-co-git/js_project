@@ -1,7 +1,9 @@
 class Offices {
   constructor() {
     this.recoveredOffices = new OfficesAdapter
+    this.comments = new Comment
     this.goGetOffices()
+
   }
 
   goGetOffices() {
@@ -10,6 +12,7 @@ class Offices {
 
   static displayOffices(json) {
 
+    let getComment = new Comment
     let div = document.getElementById("offices")
     let ul = document.createElement('ul')
     div.appendChild(ul)
@@ -20,6 +23,10 @@ class Offices {
       ul.appendChild(column)
       let div = document.createElement('div')
       div.classList.add('card')
+      let id = document.createElement('p')
+      id.className = "office-id"
+      div.appendChild(id)
+      id.value = x["id"]
       let h1 = document.createElement('h1')
       h1.className = "title"
       div.appendChild(h1)
@@ -40,6 +47,9 @@ class Offices {
       div.appendChild(p)
       p.innerHTML = "   " + x["description"] + "   "
       column.appendChild(div)
+
+    getComment.officeComments(x.id)
+
     }
   }
 }
