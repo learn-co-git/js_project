@@ -6,7 +6,7 @@ class Api::V1::CommentController < ApplicationController
   end
 
   def show
-    @comments = Comment.all.map {|ele| ele if ele.office_id == params["office_id"]}
+    @comments = Comment.all.select {|ele| ele if ele.office_id == params["office_id"]}
     render json: @comments, status: 200
   end
 
