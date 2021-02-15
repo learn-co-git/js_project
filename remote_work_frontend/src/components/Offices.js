@@ -24,20 +24,21 @@ class Offices {
       h1.className = "title"
       div.appendChild(h1)
       h1.innerHTML = x["location"]
-      let h31 = document.createElement('h3')
+      let h31 = document.createElement('p')
       h31.className = "details"
       div.appendChild(h31)
       h31.innerHTML = "Cell Signal Strength Score  " + `${x["cell"]}`
-      let h32 = document.createElement('h3')
+      let h32 = document.createElement('p')
       h32.className = "details"
       div.appendChild(h32)
       h32.innerHTML = "Restroom Quality Score  " + `${x["bathrooms"]}`
-      let h33 = document.createElement('h3')
+      let h33 = document.createElement('p')
       h33.className = "details"
       div.appendChild(h33)
       h33.innerHTML = "Working Environment Quality Score  " + `${x["peace_index"]}`
-      let p = document.createElement('p')
+      let p = document.createElement('h3')
       div.appendChild(p)
+      p.className = "color-comments"
       p.innerHTML = "   " + x["description"] + "   "
       let commentButton = document.createElement('BUTTON')
       commentButton.id = x["id"]
@@ -77,15 +78,13 @@ class Offices {
 
       let comments = document.createElement('h3')
       comments.style.textDecoration = "underline"
-      var linebreak = document.createElement("br");
       comments.id = x["id"] + "office"
       comments.innerHTML = "Comments"
-      comments.style.color = "red";
-      comments.appendChild(linebreak)
+      comments.style.color = "orange";
       div.appendChild(comments)
-
 
       column.appendChild(div)
     }
+    ul.appendChild(document.createElement("br"))
   }
 }

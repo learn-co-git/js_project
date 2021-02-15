@@ -25,7 +25,7 @@ font-family: brush script mt
 }
 
 .details {
-
+font-family: sans-serif;
 }
 
 .column {
@@ -141,12 +141,16 @@ input {
 }
 
 .color-comments {
-  color:red;
-  font-family: Lucida Console
+  color:black;
+  font-family: inherit;
 }
 
 
 .hl {
   border-left: 6px solid green;
   height: 500px;
+}
+
+.underline {
+  text: underline;
 }

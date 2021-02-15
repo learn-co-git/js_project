@@ -16,18 +16,18 @@ class Comment {
           columnComments = document.getElementById((ele["office_id"]) + "office")
 
           if (columnComments != null) {
-          let comment = document.createElement('ul')
-          comment.innerHTML = ele["statement"] +`(${ele["user_name"]})`
+          let placed_comment = document.createElement('ul')
+          placed_comment.innerHTML = ele["statement"] +`(${ele["user_name"]})`
           if (index % 2 == 0) {
-          comment.style.color = "blue"
+          placed_comment.style.color = "blue"
+          placed_comment.style.textDecoration = ""
           }
           else {
-            comment.style.color = "black"
+            placed_comment.style.color = "black"
+            placed_comment.style.textDecoration = ""
           }
-          columnComments.appendChild(comment)
+          columnComments.appendChild(placed_comment)
           columnComments.appendChild(document.createElement("br"))
-          var linebreak = document.createElement("br");
-          comment.appendChild(linebreak)
           }
         }
       })
