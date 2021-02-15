@@ -4,7 +4,6 @@ class OfficeAdapter {
   }
 
   fetchAndCreate(event) {
-    console.log("hello")
     let configurationObject = {
       method: "POST",
       headers: {
@@ -18,7 +17,7 @@ class OfficeAdapter {
         return response.json();
       })
       .then(function(object) {
-        console.log(object);
+
       })
       .catch(function(error) {
         alert("Bad things! Ragnarők!");

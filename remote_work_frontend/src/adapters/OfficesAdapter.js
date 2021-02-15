@@ -5,12 +5,15 @@ class OfficesAdapter {
   }
 
   getOffices() {
-    return fetch(this.baseUrl)
+   fetch(this.baseUrl)
     .then(function(re) {
       return re.json()
     })
     .then(function(json) {
       Offices.displayOffices(json)
+
     })
+    let getComment = new Comment
+    getComment.officeComments()
   }
 }

@@ -139,3 +139,8 @@ input {
   background-color: white;
   font-family: brush script mt
 }
+
+.color-comments {
+  color:red;
+  font-family: Lucida Console
+}
