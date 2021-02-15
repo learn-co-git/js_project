@@ -48,26 +48,42 @@ class Offices {
         let submitComment = new Comment
 
         let p = document.createElement('p')
+        p.style.textDecoration = "underline"
         p.innerHTML = "Add Comment Below"
         div.appendChild(p)
         let input = document.createElement("input")
           input.setAttribute('type','text')
           input.setAttribute('name', 'comment')
+        let user_name = document.createElement('p')
+        user_name.innerHTML = "Please enter a User-Name"
+        let input2 = document.createElement("input")
+          input.setAttribute('type','text')
+          input.setAttribute('name', 'user_name')
         let submit = document.createElement("Button")
           submit.innerHTML = "Submit Comment"
           submit.addEventListener('click', (event) => {
+            p.style.display = "none"
+            input.style.display = "none"
+            user_name.style.display = "none"
+            input2.style.display = "none"
+            submit.style.display = "none"
             submitComment.createComment(event, x["id"])
           })
           div.appendChild(input)
+          div.appendChild(user_name)
+          div.appendChild(input2)
           div.appendChild(submit)
       })
 
       let comments = document.createElement('h3')
+      comments.style.textDecoration = "underline"
       var linebreak = document.createElement("br");
       comments.id = x["id"] + "office"
       comments.innerHTML = "Comments"
       comments.style.color = "red";
-      div.appendChild(comments).appendChild(linebreak)
+      comments.appendChild(linebreak)
+      div.appendChild(comments)
+
 
       column.appendChild(div)
     }

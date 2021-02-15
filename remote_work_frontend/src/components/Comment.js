@@ -25,6 +25,7 @@ class Comment {
             comment.style.color = "black"
           }
           columnComments.appendChild(comment)
+          columnComments.appendChild(document.createElement("br"))
           var linebreak = document.createElement("br");
           comment.appendChild(linebreak)
           }
@@ -35,10 +36,30 @@ class Comment {
         })
       }
 
-  createComment(event, id) {
-    console.log(event.target.previousSibling.value)
-    console.log(id)
+  createComment(event, bigId) {
+    let configObject = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify({statement: event.target.previousSibling.previousSibling.previousSibling.value, office_id: bigId, user_name: event.target.previousSibling.value})
+    };
 
-     // POST   /api/v1/comment   fetch comment#create
+    fetch(this.base, configObject)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(object) {
+        let goAnd = new OfficesAdapter
+        goAnd.getOffices()
+      })
+      .catch(function(error) {
+        alert("error in comment creation")
+        console.log(error.message)
+      })
+
+      console.log(event.target.previousSibling.value)
+      console.log(event.target.previousSibling.previousSibling.previousSibling.value)
   }
 }
