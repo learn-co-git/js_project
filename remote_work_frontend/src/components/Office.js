@@ -3,6 +3,10 @@ class Office {
 
   }
 
+  static reload() {
+    window.location.reload(false);
+  }
+
   newOffice() {
     let h3 = document.getElementById("h3-share")
     let button = document.getElementById("share")
@@ -13,10 +17,9 @@ class Office {
 
       let form = document.getElementById("workNew")
       form.addEventListener('submit', (event) => {
-
+        form.style.display = "none"
+        event.preventDefault()
          new Validate(event)
-         event.preventDefault()
-
       })
     })
   }

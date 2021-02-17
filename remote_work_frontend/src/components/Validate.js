@@ -64,6 +64,7 @@ class Validate {
     if (statement === "") {
       array.push(location, cell, bathrooms, peace_index, description)
       this.OfficeAdapter.fetchAndCreate(array)
+      document.getElementById("workNew").reset()
     }
     else {
       message1.innerHTML = statement

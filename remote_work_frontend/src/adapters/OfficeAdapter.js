@@ -16,8 +16,8 @@ class OfficeAdapter {
       .then(function(response) {
         return response.json();
       })
-      .then(function(object) {
-
+      .then(function(response){
+        Offices.solo(response)
       })
       .catch(function(error) {
         alert("Bad things! Ragnarők!");

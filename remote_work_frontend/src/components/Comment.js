@@ -51,15 +51,12 @@ class Comment {
         return response.json();
       })
       .then(function(object) {
-        let goAnd = new OfficesAdapter
-        goAnd.getOffices()
-      })
+        Office.reload()
+       })
       .catch(function(error) {
         alert("error in comment creation")
         console.log(error.message)
       })
 
-      console.log(event.target.previousSibling.value)
-      console.log(event.target.previousSibling.previousSibling.previousSibling.value)
   }
 }

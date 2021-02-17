@@ -10,10 +10,11 @@ class OfficesAdapter {
       return re.json()
     })
     .then(function(json) {
-      Offices.displayOffices(json)
+      Offices.iterate(json)
 
     })
     let getComment = new Comment
     getComment.officeComments()
+    
   }
 }
