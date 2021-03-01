@@ -12814,3 +12814,116 @@ Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.9ms | Allocations: 1868)
 Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 1.5ms | Allocations: 2737)
 
 
+Started GET "/api/v1/office" for ::1 at 2021-03-01 10:00:46 -0700
+Started GET "/api/v1/comment" for 127.0.0.1 at 2021-03-01 10:00:46 -0700
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CommentController#index as */*
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (6.5ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 100ms (Views: 17.3ms | ActiveRecord: 32.1ms | Allocations: 13621)
+
+
+  [1m[36mComment Load (15.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:5:in `index'
+Completed 200 OK in 157ms (Views: 30.5ms | ActiveRecord: 49.0ms | Allocations: 19961)
+
+
+Started GET "/api/v1/office" for ::1 at 2021-03-01 10:19:15 -0700
+Processing by Api::V1::OfficeController#index as */*
+Started GET "/api/v1/comment" for 127.0.0.1 at 2021-03-01 10:19:15 -0700
+Processing by Api::V1::CommentController#index as */*
+  [1m[36mOffice Load (1.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 55ms (Views: 54.7ms | ActiveRecord: 18.6ms | Allocations: 4923)
+
+
+  [1m[36mComment Load (1.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:5:in `index'
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 18.1ms | Allocations: 6746)
+
+
+Started GET "/api/v1/office" for ::1 at 2021-03-01 10:19:52 -0700
+Processing by Api::V1::OfficeController#index as */*
+Started GET "/api/v1/comment" for 127.0.0.1 at 2021-03-01 10:19:52 -0700
+  [1m[36mOffice Load (1.6ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+Processing by Api::V1::CommentController#index as */*
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 1.6ms | Allocations: 2133)
+
+
+  [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 1.3ms | Allocations: 2493)
+
+
+Started GET "/api/v1/office" for ::1 at 2021-03-01 10:20:38 -0700
+Processing by Api::V1::OfficeController#index as */*
+Started GET "/api/v1/comment" for 127.0.0.1 at 2021-03-01 10:20:38 -0700
+Processing by Api::V1::CommentController#index as */*
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:5:in `index'
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.6ms | Allocations: 1500)
+
+
+  [1m[36mOffice Load (3.1ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 3.1ms | Allocations: 3757)
+
+
+Started GET "/api/v1/office" for ::1 at 2021-03-01 10:21:05 -0700
+Processing by Api::V1::OfficeController#index as */*
+  [1m[36mOffice Load (0.7ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.7ms | Allocations: 1318)
+
+
+Started GET "/api/v1/comment" for 127.0.0.1 at 2021-03-01 10:21:05 -0700
+Processing by Api::V1::CommentController#index as */*
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.7ms | Allocations: 1458)
+
+
+Started GET "/api/v1/office" for ::1 at 2021-03-01 10:21:18 -0700
+Processing by Api::V1::OfficeController#index as */*
+Started GET "/api/v1/comment" for 127.0.0.1 at 2021-03-01 10:21:18 -0700
+Processing by Api::V1::CommentController#index as */*
+  [1m[36mOffice Load (3.5ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 3.5ms | Allocations: 1926)
+
+
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.7ms | Allocations: 2920)
+
+
+Started GET "/api/v1/office" for ::1 at 2021-03-01 10:21:55 -0700
+Processing by Api::V1::OfficeController#index as */*
+Started GET "/api/v1/comment" for 127.0.0.1 at 2021-03-01 10:21:55 -0700
+  [1m[36mOffice Load (1.3ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Processing by Api::V1::CommentController#index as */*
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 1.3ms | Allocations: 2032)
+
+
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.7ms | Allocations: 1682)
+
+
+Started GET "/api/v1/office" for ::1 at 2021-03-01 10:22:53 -0700
+Started GET "/api/v1/comment" for 127.0.0.1 at 2021-03-01 10:22:53 -0700
+Processing by Api::V1::OfficeController#index as */*
+Processing by Api::V1::CommentController#index as */*
+  [1m[36mOffice Load (1.0ms)[0m  [1m[34mSELECT "offices".* FROM "offices"[0m
+  ↳ app/controllers/api/v1/office_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 1.0ms | Allocations: 1747)
+
+
+  [1m[36mComment Load (4.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/controllers/api/v1/comment_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 4.0ms | Allocations: 2903)
+
+

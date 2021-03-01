@@ -20,7 +20,7 @@ class OfficeAdapter {
         Offices.solo(response)
       })
       .catch(function(error) {
-        alert("Bad things! Ragnarők!");
+        alert("error");
         console.log(error.message);
       });
     }
