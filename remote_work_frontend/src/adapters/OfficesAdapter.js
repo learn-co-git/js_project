@@ -22,11 +22,10 @@ class OfficesAdapter {
         // console.log(office)
         const remoteOffice = new Office(office.id, office.cell, office.location, office.bathrooms, office.peace_index, office.description)
         remoteOffice.render()
+
       }
-
+      let getComment = new Comment
+      getComment.officeComments()
     })
-    let getComment = new Comment
-    getComment.officeComments()
-
   }
 }
